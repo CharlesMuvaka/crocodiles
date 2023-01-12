@@ -62,3 +62,16 @@ def next_site(data_frame, previous_num=sys.maxsize, previous_site=None):
     return int(closest_sighting), closest_node, closest_x, closest_y
 
 
+if __name__ == '__main__':
+    my_frame = pd.read_excel('croc_data.xlsx')
+
+    # Getting the first details
+    sighting, near_node, near_x, near_y = next_site(my_frame)
+
+    # print(sighting, near_node)
+
+    sighting2, near_node1, near_x1, near_y1 = next_site(my_frame, near_node, sighting)
+
+    print(sighting2, near_node1, near_x1, near_y1)
+    # print(near_node1)
+    # print(near_node4)
