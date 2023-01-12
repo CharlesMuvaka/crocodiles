@@ -41,3 +41,29 @@ def calculate_cost(graph1, start, end):
         31: {'cost': infinity, 'size': []},
         32: {'cost': infinity, 'size': []},
     }
+    # assigning the starting point a cost of zero
+    node_data[start]['cost'] = 0
+    visited = []
+    temporary_start = start
+    # print(len(graph1))
+    for i in range(n):
+        if temporary_start not in visited:
+            # print(temporary_start)
+            visited.append(temporary_start)
+            min_heap = []
+            for neighbors in graph1[temporary_start]:
+                # print(neighbors)
+                if neighbors not in visited:
+                    temporary_start_cost = node_data[temporary_start]['cost'] + graph1[temporary_start][neighbors]
+                    # print(temporary_start_cost)
+                    if temporary_start_cost < node_data[neighbors]['cost']:
+                        # assigning the cost of neighbors
+                        node_data[neighbors]['cost'] = temporary_start_cost
+                        node_data[neighbors]['size'] = node_data[neighbors]['size'] + list(graph1[temporary_start])
+                    heappush(min_heap, (node_data[neighbors]['cost'], neighbors))
+                    # print(min_heap)
+        heapify(min_heap)
+        temporary_start = min_heap[0][1]
+    return node_data[end]['cost'], node_data[end]['size']
+
+
