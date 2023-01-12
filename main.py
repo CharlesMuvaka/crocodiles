@@ -38,3 +38,17 @@ def has_path(graph, start, end, visited=None):
     return False
 
 
+class Graph1:  # creating a graph
+    def __init__(self, edges):
+        self.edges = edges
+        self.routes_dictionary = {}
+        for start, end in self.edges:
+
+            if start in self.routes_dictionary:
+                self.routes_dictionary[start].append(end)
+            else:
+                self.routes_dictionary[start] = [end]
+
+        print(self.routes_dictionary)
+
+
