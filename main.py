@@ -17,3 +17,24 @@ def count_cycles(graph):  # creating a function to calculate the total number of
         if explore(graph, node, visited):
             count += 1
     return count
+
+
+# create a method to check if there exists a path between nodes
+def has_path(graph, start, end, visited=None):
+    if visited is None:
+        visited = []
+    if start == end:
+        return True
+
+    if start in visited:
+        return False
+    else:
+        visited = visited + [start]  # appending the source in the list to avoid cycles in the graph
+        # print(visited)
+
+    for neighbor in graph.routes_dictionary[start]:
+        if has_path(graph, neighbor, end, visited):
+            return True
+    return False
+
+
