@@ -66,3 +66,27 @@ computer.
         for name in names:
             newName = capitalize(name)
             print(newName)
+
+        Version Control
+- A software that tracks the versions of your code and documents them when you update.
+- Examples
+        1. Git
+        2. GNU arch
+        3. Mercurial.
+                GIT
+- A common version control that tracks the versions of your code and documents it as you update.
+- Some useful commands associated with git
+    1. Git init - initializes an empty git repository
+    2. git status - Used to check which files have been staged or not staged to be tracked.
+    3. Git add - takes in an option which indicates the file to be tracked.
+        NOTE: You can use a dot at the end of the git add command to add all files that are supposed
+                to be tracked.
+    4. Git commit -  takes in two options -m(indicating a message) and the message to be typed
+            enclosed in quotation marks. This message is a description of what the code is about
+        Configuring a user
+    1. git config -global user.email "muvakacharles@gmail.com" - Tells git the email address of the
+        person
+    2. git config -global user.name "CharlesMuvaka" - Tells git the username of the person involved
+        NOTE: The global option applies the person as root in the whole machine.
+
+        GITHUB - A web service for hosting git repositories.
