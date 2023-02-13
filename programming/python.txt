@@ -56,3 +56,13 @@ computer.
             case "stop": pauseBreak()
             case "merge": accelerate()
             default: addNitro()
+
+        Loops
+- Enable execution of code in a multiple number of times.
+    For loops
+- Enable execution of code in a known number of times.
+- Examples;
+        names = {"charles", "Muvaka", "Kata"}
+        for name in names:
+            newName = capitalize(name)
+            print(newName)
