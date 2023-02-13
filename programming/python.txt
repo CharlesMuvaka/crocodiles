@@ -31,4 +31,28 @@ computer.
         5. Queues -
         6. Dequeues -
 
+            Conditions
+  if statements
+- You can use if statements to check if certain conditions in your condition.
+- An if statement can be followed by an optional else statement that contains code to be
+    executed when the if statement fails.
+    NOTE: An if statement should only contain one else statement. An If statement can also occur
+            without an else statement.
+- Elif statements can be added to compare if the conditions to be tested are more than one.
+- Example;
+        name = "james"
+        if  name.isNotNull:
+           print "I am charles."
+        elif name.isNotBlank:
+            print "I am Kata."
+        else:
+            print "I am Muvaka."
 
+
+  SWitch statements
+- Used to test multiple cases of a value
+- Example;
+        switch(sign):
+            case "stop": pauseBreak()
+            case "merge": accelerate()
+            default: addNitro()
