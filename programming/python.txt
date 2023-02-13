@@ -1,0 +1,34 @@
+                    INTRODUCTION
+- Automation refers to any technology that removes any human interaction from a system.
+- Scripts are written to automate labor-intensive tasks.
+- A programing language communicates instructions to a computer.
+- A set of instructions that tell what a computer is supposed to do is a program.
+- Compilers and interpreters transform the programming language into machine code that can be understood
+  by the computer.
+    NOTE: Compilers transform the language at once into machine code before it runs while
+          an interpreter translates line after line while the program runs.
+- A data type is classification of data that tells the computer how a programmer intends to use the data.
+    NOTE: Some languages need the programmer to explicitly define the datatype of a variable while
+           others don't. The compiler understands the data type inferred based on the syntax used.
+- Variables are containers for storing data.
+    - variables should be assigned values using the assignment operator.
+- American Standards Association of Information Interchange is a system that associates encoding characters into a
+computer.
+
+            Composite and Primitive Data types
+- Primitives are data types built on a specific programming language without modification.
+- Composites is a combination of primitive data types to form a single unit(Classes)
+
+            Collections
+- They group different variables in a single unit.
+- Examples;
+        1. Arrays - An ordered collection of the same type
+        2. Sets - An ordered collection that doesn't contain duplicates
+        3. Lists - An ordered collection that can contain duplicates and can be of different types.
+        4. Dictionaries - Used to store key value pairs
+        3. Hashes -
+        4. Vectors -
+        5. Queues -
+        6. Dequeues -
+
+
