@@ -83,6 +83,11 @@ computer.
                 to be tracked.
     4. Git commit -  takes in two options -m(indicating a message) and the message to be typed
             enclosed in quotation marks. This message is a description of what the code is about
+    5. Git branch - creates a branch in your local git repository. Takes in the name of the branch as an option.
+
+    6. Git push - sends the code version in your local git repository to the cloud. Takes in two options
+            1. Origin
+            2. Name os the branch located in the cloud where data is being sent.
         Configuring a user
     1. git config -global user.email "muvakacharles@gmail.com" - Tells git the email address of the
         person
